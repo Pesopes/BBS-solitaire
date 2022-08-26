@@ -1,0 +1,347 @@
+[gd_scene load_steps=131 format=2]
+
+[ext_resource path="res://assets/images/kabufada cards/1.png" type="Texture" id=1]
+[ext_resource path="res://src/card/card.gd" type="Script" id=2]
+[ext_resource path="res://assets/images/kabufada cards/2.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/kabufada cards/6.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/kabufada cards/4.png" type="Texture" id=5]
+[ext_resource path="res://assets/images/kabufada cards/5.png" type="Texture" id=6]
+[ext_resource path="res://assets/images/kabufada cards/9.png" type="Texture" id=7]
+[ext_resource path="res://assets/images/kabufada cards/7.png" type="Texture" id=8]
+[ext_resource path="res://assets/images/kabufada cards/10.png" type="Texture" id=9]
+[ext_resource path="res://assets/images/kabufada cards/8.png" type="Texture" id=10]
+[ext_resource path="res://assets/images/kabufada cards/3.png" type="Texture" id=11]
+[ext_resource path="res://assets/images/kabufada cards/11.png" type="Texture" id=12]
+[ext_resource path="res://assets/images/kabufada cards/12.png" type="Texture" id=13]
+[ext_resource path="res://assets/images/cards/8BitDeckAssets.png" type="Texture" id=14]
+[ext_resource path="res://assets/images/kabufuda trans/Kabu-A-01.png" type="Texture" id=15]
+[ext_resource path="res://assets/images/kabufuda new/Kabu-A-09.png" type="Texture" id=18]
+[ext_resource path="res://assets/images/kabufuda new/Kabu-A-06.png" type="Texture" id=19]
+[ext_resource path="res://assets/images/kabufuda new/Kabu-A-07.png" type="Texture" id=20]
+[ext_resource path="res://assets/images/kabufuda new/Kabu-A-01.png" type="Texture" id=21]
+[ext_resource path="res://assets/images/kabufuda new/Kabu-A-02.png" type="Texture" id=22]
+[ext_resource path="res://assets/images/kabufuda new/Kabu-A-08.png" type="Texture" id=23]
+[ext_resource path="res://assets/images/kabufuda new/Kabu-A-04.png" type="Texture" id=24]
+[ext_resource path="res://assets/images/kabufuda new/Kabu-A-JA.png" type="Texture" id=25]
+[ext_resource path="res://assets/images/kabufuda new/Kabu-S-04.png" type="Texture" id=26]
+[ext_resource path="res://assets/images/kabufuda new/Kabu-S-01.png" type="Texture" id=27]
+[ext_resource path="res://assets/images/kabufuda new/Kabu-A-03.png" type="Texture" id=28]
+[ext_resource path="res://assets/images/kabufuda new/Kabu-A-05.png" type="Texture" id=29]
+[ext_resource path="res://assets/images/kabufuda resolution/Kabu-S-01.png" type="Texture" id=30]
+[ext_resource path="res://assets/images/kabufuda resolution/Kabu-S-04.png" type="Texture" id=31]
+[ext_resource path="res://assets/images/kabufuda resolution/Kabu-A-06.png" type="Texture" id=32]
+[ext_resource path="res://assets/images/kabufuda resolution/Kabu-A-01.png" type="Texture" id=33]
+[ext_resource path="res://assets/images/kabufuda resolution/Kabu-A-07.png" type="Texture" id=34]
+[ext_resource path="res://assets/images/kabufuda resolution/Kabu-A-08.png" type="Texture" id=35]
+[ext_resource path="res://assets/images/kabufuda resolution/Kabu-A-09.png" type="Texture" id=36]
+[ext_resource path="res://assets/images/kabufuda resolution/Kabu-A-05.png" type="Texture" id=37]
+[ext_resource path="res://assets/images/kabufuda resolution/Kabu-A-02.png" type="Texture" id=38]
+[ext_resource path="res://assets/images/kabufuda resolution/Kabu-A-03.png" type="Texture" id=39]
+[ext_resource path="res://assets/images/kabufuda resolution/Kabu-A-04.png" type="Texture" id=40]
+[ext_resource path="res://assets/images/kabufuda resolution/Kabu-A-JA.png" type="Texture" id=41]
+[ext_resource path="res://assets/images/Kabufuda pixel new/Kabu-S-01.png" type="Texture" id=42]
+[ext_resource path="res://assets/images/Kabufuda pixel new/Kabu-S-04.png" type="Texture" id=43]
+[ext_resource path="res://assets/images/Kabufuda pixel new/Kabu-A-09.png" type="Texture" id=44]
+[ext_resource path="res://assets/images/Kabufuda pixel new/Kabu-A-08.png" type="Texture" id=45]
+[ext_resource path="res://assets/images/Kabufuda pixel new/Kabu-A-07.png" type="Texture" id=46]
+[ext_resource path="res://assets/images/Kabufuda pixel new/Kabu-A-01.png" type="Texture" id=47]
+[ext_resource path="res://assets/images/Kabufuda pixel new/Kabu-A-04.png" type="Texture" id=48]
+[ext_resource path="res://assets/images/Kabufuda pixel new/Kabu-A-06.png" type="Texture" id=49]
+[ext_resource path="res://assets/images/Kabufuda pixel new/Kabu-A-05.png" type="Texture" id=50]
+[ext_resource path="res://assets/images/Kabufuda pixel new/Kabu-A-JA.png" type="Texture" id=51]
+[ext_resource path="res://assets/images/Kabufuda pixel new/Kabu-A-02.png" type="Texture" id=52]
+[ext_resource path="res://assets/images/Kabufuda pixel new/Kabu-A-03.png" type="Texture" id=53]
+[ext_resource path="res://assets/images/kabufuda round 3/Kabu-A-08.png" type="Texture" id=54]
+[ext_resource path="res://assets/images/kabufuda round 3/Kabu-S-01.png" type="Texture" id=55]
+[ext_resource path="res://assets/images/kabufuda round 3/Kabu-A-04.png" type="Texture" id=56]
+[ext_resource path="res://assets/images/kabufuda round 3/Kabu-A-05.png" type="Texture" id=57]
+[ext_resource path="res://assets/images/kabufuda round 3/Kabu-A-02.png" type="Texture" id=58]
+[ext_resource path="res://assets/images/kabufuda round 3/Kabu-A-09.png" type="Texture" id=59]
+[ext_resource path="res://assets/images/kabufuda round 3/Kabu-A-03.png" type="Texture" id=60]
+[ext_resource path="res://assets/images/kabufuda round 3/Kabu-A-06.png" type="Texture" id=61]
+[ext_resource path="res://assets/images/kabufuda round 3/Kabu-A-01.png" type="Texture" id=62]
+[ext_resource path="res://assets/images/kabufuda round 3/Kabu-A-07.png" type="Texture" id=63]
+[ext_resource path="res://assets/images/kabufuda round 3/Kabu-A-JA.png" type="Texture" id=64]
+[ext_resource path="res://assets/images/kabufuda round 3/Kabu-S-04.png" type="Texture" id=65]
+[ext_resource path="res://assets/images/kabufuda trans/Kabu-S-04.png" type="Texture" id=66]
+[ext_resource path="res://assets/images/kabufuda trans/Kabu-A-04.png" type="Texture" id=67]
+[ext_resource path="res://assets/images/kabufuda trans/Kabu-S-01.png" type="Texture" id=68]
+[ext_resource path="res://assets/images/kabufuda trans/Kabu-A-03.png" type="Texture" id=69]
+[ext_resource path="res://assets/images/kabufuda trans/Kabu-A-06.png" type="Texture" id=70]
+[ext_resource path="res://assets/images/kabufuda trans/Kabu-A-07.png" type="Texture" id=71]
+[ext_resource path="res://assets/images/kabufuda trans/Kabu-A-JA.png" type="Texture" id=72]
+[ext_resource path="res://assets/images/kabufuda trans/Kabu-A-08.png" type="Texture" id=73]
+[ext_resource path="res://assets/images/kabufuda trans/Kabu-A-02.png" type="Texture" id=74]
+[ext_resource path="res://assets/images/kabufuda trans/Kabu-A-09.png" type="Texture" id=75]
+[ext_resource path="res://assets/images/kabufuda trans/Kabu-A-05.png" type="Texture" id=76]
+[ext_resource path="res://src/Resources/new_outline_shader.tres" type="Material" id=77]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 35, 47 )
+
+[sub_resource type="AtlasTexture" id=54]
+atlas = ExtResource( 14 )
+region = Rect2( 455, 141, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=43]
+atlas = ExtResource( 14 )
+region = Rect2( 70, 141, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 14 )
+region = Rect2( 35, 94, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 14 )
+region = Rect2( 455, 0, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 14 )
+region = Rect2( 385, 0, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 14 )
+region = Rect2( 350, 0, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 14 )
+region = Rect2( 420, 0, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=51]
+atlas = ExtResource( 14 )
+region = Rect2( 350, 141, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=52]
+atlas = ExtResource( 14 )
+region = Rect2( 385, 141, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=53]
+atlas = ExtResource( 14 )
+region = Rect2( 420, 141, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=159]
+atlas = ExtResource( 14 )
+region = Rect2( 0, 0, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 14 )
+region = Rect2( 315, 0, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 14 )
+region = Rect2( 245, 0, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 14 )
+region = Rect2( 35, 47, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 14 )
+region = Rect2( 70, 47, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 14 )
+region = Rect2( 105, 47, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 14 )
+region = Rect2( 140, 47, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 14 )
+region = Rect2( 140, 0, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 14 )
+region = Rect2( 175, 47, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 14 )
+region = Rect2( 210, 47, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 14 )
+region = Rect2( 245, 47, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 14 )
+region = Rect2( 35, 0, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 14 )
+region = Rect2( 280, 47, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 14 )
+region = Rect2( 70, 0, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 14 )
+region = Rect2( 105, 0, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 14 )
+region = Rect2( 175, 0, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 14 )
+region = Rect2( 280, 0, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 14 )
+region = Rect2( 315, 47, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 14 )
+region = Rect2( 210, 0, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 14 )
+region = Rect2( 350, 47, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 14 )
+region = Rect2( 385, 47, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 14 )
+region = Rect2( 420, 47, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 14 )
+region = Rect2( 455, 47, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 14 )
+region = Rect2( 70, 94, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 14 )
+region = Rect2( 105, 94, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 14 )
+region = Rect2( 140, 94, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 14 )
+region = Rect2( 175, 94, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 14 )
+region = Rect2( 210, 94, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 14 )
+region = Rect2( 245, 94, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=36]
+atlas = ExtResource( 14 )
+region = Rect2( 280, 94, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=37]
+atlas = ExtResource( 14 )
+region = Rect2( 315, 94, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=38]
+atlas = ExtResource( 14 )
+region = Rect2( 350, 94, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=39]
+atlas = ExtResource( 14 )
+region = Rect2( 385, 94, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=40]
+atlas = ExtResource( 14 )
+region = Rect2( 420, 94, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=41]
+atlas = ExtResource( 14 )
+region = Rect2( 455, 94, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=42]
+atlas = ExtResource( 14 )
+region = Rect2( 35, 141, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=44]
+atlas = ExtResource( 14 )
+region = Rect2( 105, 141, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=45]
+atlas = ExtResource( 14 )
+region = Rect2( 140, 141, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=46]
+atlas = ExtResource( 14 )
+region = Rect2( 175, 141, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=47]
+atlas = ExtResource( 14 )
+region = Rect2( 210, 141, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=48]
+atlas = ExtResource( 14 )
+region = Rect2( 245, 141, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=49]
+atlas = ExtResource( 14 )
+region = Rect2( 280, 141, 35, 47 )
+
+[sub_resource type="AtlasTexture" id=50]
+atlas = ExtResource( 14 )
+region = Rect2( 315, 141, 35, 47 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ SubResource( 54 ), SubResource( 43 ), SubResource( 29 ), SubResource( 15 ), SubResource( 13 ), SubResource( 12 ), SubResource( 14 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 159 ), SubResource( 11 ), SubResource( 9 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 6 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 3 ), SubResource( 23 ), SubResource( 4 ), SubResource( 5 ), SubResource( 7 ), SubResource( 10 ), SubResource( 24 ), SubResource( 8 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 44 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ), SubResource( 48 ), SubResource( 49 ), SubResource( 50 ) ],
+"loop": true,
+"name": "8-bit",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 52 ), ExtResource( 53 ), ExtResource( 48 ), ExtResource( 50 ), ExtResource( 49 ), ExtResource( 46 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 51 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 47 ) ],
+"loop": true,
+"name": "Kabufuda pixel",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 37 ), ExtResource( 32 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 41 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "Kabufuda res",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 11 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 28 ), ExtResource( 24 ), ExtResource( 29 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 23 ), ExtResource( 18 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "kabufuda",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 62 ), ExtResource( 58 ), ExtResource( 60 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 61 ), ExtResource( 63 ), ExtResource( 54 ), ExtResource( 59 ), ExtResource( 64 ), ExtResource( 55 ), ExtResource( 65 ) ],
+"loop": true,
+"name": "kabufuda round 3",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 74 ), ExtResource( 69 ), ExtResource( 67 ), ExtResource( 76 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 73 ), ExtResource( 75 ), ExtResource( 72 ), ExtResource( 68 ), ExtResource( 66 ) ],
+"loop": true,
+"name": "kabufuda trans",
+"speed": 5.0
+} ]
+
+[node name="Card" type="Area2D" groups=["card"]]
+z_index = 1
+script = ExtResource( 2 )
+
+[node name="Shape" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Sprites" type="AnimatedSprite" parent="."]
+material = ExtResource( 77 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "8-bit"
+
+[connection signal="input_event" from="." to="." method="_on_Card_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_Card_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_Card_mouse_exited"]

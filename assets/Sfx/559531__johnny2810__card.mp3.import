@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/559531__johnny2810__card.mp3-64d1b1be32383de9d4c2ca3d17b30173.mp3str"
+
+[deps]
+
+source_file="res://assets/Sfx/559531__johnny2810__card.mp3"
+dest_files=[ "res://.import/559531__johnny2810__card.mp3-64d1b1be32383de9d4c2ca3d17b30173.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

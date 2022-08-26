@@ -1,0 +1,16 @@
+key,en,cs
+TEST,This is a simple test to test stuff!,Toto je jednoduchý test na vyzkoušení věcí!
+LANGUAGE,Language,Jazyk
+SETTINGS,Settings,Nastavení
+TOGGLE_FULLSCREEN,Toggle fullscreen,Fullscreen
+TOGGLE_VSYNC,Toggle vsync,Vsync
+RESOLUTION,Change resolution,Změnit rozlišení
+SOUND_MASTER,Master volume,Hlavní hlasitost
+SOUND_MUSIC,Music,Hudba
+SOUND_SFX,Sound effects,Zvukové efekty
+STATS_TIME,Time to complete:,Čas hry
+STATS_CLICKED,Clicks:,Počet kliků
+STATS_MODE,Difficulty:,Obtížnost
+CONGRATULATIONS,Congratulations!,Blahopřeji!
+RULES,Rules,Jazyk
+RULES_EXPLANATION,This is a solitaire game blah blah,Jazyk
