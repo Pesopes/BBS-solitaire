@@ -5,6 +5,9 @@ func set_mode(mode):
 	Save.game_data.mode = mode
 	Save.save_data()
 
+func set_language(lang):
+	TranslationServer.set_locale(lang)
+
 # Display
 func toggle_fullscreen(val):
 	OS.window_fullscreen = val

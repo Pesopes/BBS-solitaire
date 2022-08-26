@@ -81,3 +81,13 @@ func _on_ModeBtn_item_selected(index):
 		3:
 			mode = Global.GAME_TYPES.EXPERT
 	GlobalSettings.set_mode(mode)
+
+
+func _on_LangBtn_item_selected(index):
+	var lang = "en"
+	match index:
+		0:
+			lang = "en"
+		1:
+			lang = "cs"
+	GlobalSettings.set_language(lang)
