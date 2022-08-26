@@ -1,5 +1,8 @@
 extends Popup
 
+# Language
+onready var lang_btn := get_node("%LangBtn")
+
 # Game
 onready var mode_btn := get_node("%ModeBtn")
 
@@ -15,6 +18,14 @@ onready var sfx_slider := get_node("%SfxSlider")
 func _ready():
 	print_debug(Save.game_data)
 	mode_btn.selected = Save.game_data.mode
+
+	#bad but I want to finish this
+	match Save.game_data.language:
+		"en":
+			lang_btn.selected = 0 
+		"cs":
+			lang_btn.selected = 1
+	GlobalSettings.set_language(Save.game_data.language)
 
 	fullscreen_btn.pressed = Save.game_data.fullscreen_on
 	GlobalSettings.toggle_fullscreen(Save.game_data.fullscreen_on)

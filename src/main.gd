@@ -111,6 +111,7 @@ func animate_card_start(anim_time_speed:float = 1.0):
 		if child:
 			var defualt_pos = child.global_position
 			child.global_position = Vector2(-200,-200)
+# warning-ignore:return_value_discarded
 			tween.tween_property(child,"global_position",defualt_pos,anim_time*2).set_delay(ANIM_DELAY)
 #			tween.tween_callback(sound_card_flip, "play")
 #		while true:
@@ -127,6 +128,7 @@ func animate_card_start(anim_time_speed:float = 1.0):
 #			cool animation thats too distracting :/
 #			var mid_point = get_viewport_rect().size/2+Vector2(0,-100)
 #			tween.tween_property(first_child,"global_position",mid_point,anim_time).set_delay(ANIM_DELAY)
+# warning-ignore:return_value_discarded
 		tween.tween_property(first_child,"global_position",defualt_pos,anim_time).set_delay(ANIM_DELAY)
 		var child = get_child_by_groups(first_child,["card"])
 		var card_tween = create_tween().set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_EXPO)
@@ -166,6 +168,12 @@ func set_up_game(first:=false):
 	update_difficulty()
 	save_board()
 func _ready():
+	if Save.game_data.first_start:
+		print_debug("DOES IT EXIST")
+		Save.game_data.first_start = false
+		Save.save_data()
+# warning-ignore:return_value_discarded
+		get_tree().change_scene("res://src/first screen/First_screen.tscn")
 	top_spaces.position -= card_offset
 	bottom_spaces.position -= card_offset
 
@@ -189,8 +197,10 @@ func _process(_delta):
 		var top_space = top_spaces.get_child(i)
 		var colour_tween := create_tween().set_ease(Tween.EASE_OUT)
 		if unlocked_slots[i]:
+# warning-ignore:return_value_discarded
 			colour_tween.tween_property(top_space,"modulate",Color.white,0.2) 
 		else:
+# warning-ignore:return_value_discarded
 			colour_tween.tween_property(top_space,"modulate",Color.white.darkened(0.8),0.2)
 	if Input.is_action_just_pressed("RMC"):
 		let_go_of_card()
@@ -336,8 +346,8 @@ func animate_card_use(card:Area2D,target_pos:Vector2,defualt_scale:Vector2):
 	var defualt_z_index = card.z_index
 	var target_scale = card.scale
 	card.global_scale = defualt_scale
-	var mid_point := card.position.linear_interpolate(target_pos,0.5)
-	var max_scale = Vector2(3.6,3.6)
+#	var mid_point := card.position.linear_interpolate(target_pos,0.5)
+#	var max_scale = Vector2(3.6,3.6)
 	# First part
 	var anim_time = 0.3584
 	var pos_tween := create_tween().set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
@@ -345,9 +355,13 @@ func animate_card_use(card:Area2D,target_pos:Vector2,defualt_scale:Vector2):
 #	pos_tween.parallel().tween_property(card,"global_scale",max_scale,first_part_anim_time)
 	# Second part
 #	pos_tween.set_trans(Tween.TRANS_CUBIC)
+# warning-ignore:return_value_discarded
 	pos_tween.tween_property(card,"position",target_pos,anim_time)
+# warning-ignore:return_value_discarded
 	pos_tween.parallel().tween_property(card,"z_index",1000,0.1)
+# warning-ignore:return_value_discarded
 	pos_tween.parallel().tween_property(card,"scale",target_scale,anim_time)
+# warning-ignore:return_value_discarded
 	pos_tween.parallel().tween_property(card,"z_index",defualt_z_index,anim_time)
 
 
