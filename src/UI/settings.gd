@@ -102,3 +102,7 @@ func _on_LangBtn_item_selected(index):
 		1:
 			lang = "cs"
 	GlobalSettings.set_language(lang)
+
+
+func _on_ResetSettingsBtn2_pressed():
+	Save.delete_data()

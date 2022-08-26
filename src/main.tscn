@@ -56,6 +56,7 @@ shortcut = SubResource( 3 )
 text = "BACK"
 
 [node name="Settings" parent="UI" instance=ExtResource( 5 )]
+visible = false
 
 [node name="WinDialog" parent="UI" instance=ExtResource( 9 )]
 unique_name_in_owner = true

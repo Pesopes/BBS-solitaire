@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://src/UI/settings.gd" type="Script" id=1]
 [ext_resource path="res://assets/fonts/LuckiestGuy-Regular.ttf" type="DynamicFontData" id=2]
@@ -34,7 +34,12 @@ font_data = ExtResource( 5 )
 size = 35
 font_data = ExtResource( 6 )
 
+[sub_resource type="DynamicFont" id=8]
+size = 28
+font_data = ExtResource( 2 )
+
 [node name="Settings" type="Popup"]
+visible = true
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -68,6 +73,7 @@ margin_bottom = 471.0
 custom_fonts/font = SubResource( 1 )
 
 [node name="GAME" type="Tabs" parent="Panel/TabContainer"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 61.0
@@ -123,7 +129,6 @@ script = ExtResource( 4 )
 bbcode_text_translate = "RULES_EXPLANATION"
 
 [node name="SETTINGS" type="Tabs" parent="Panel/TabContainer"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 61.0
@@ -141,15 +146,15 @@ size_flags_horizontal = 5
 columns = 2
 
 [node name="LangLabel" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
-margin_right = 432.0
+margin_right = 458.0
 margin_bottom = 59.0
 custom_fonts/font = SubResource( 2 )
 text = "CHOOSE_LANGUAGE"
 
 [node name="LangBtn" type="OptionButton" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
 unique_name_in_owner = true
-margin_left = 983.0
-margin_right = 1157.0
+margin_left = 961.0
+margin_right = 1135.0
 margin_bottom = 59.0
 size_flags_horizontal = 10
 theme = SubResource( 5 )
@@ -159,61 +164,26 @@ items = [ "English", null, false, 0, null, "Česky", null, false, 1, null ]
 selected = 0
 
 [node name="Spacer" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
-margin_right = 458.0
-margin_bottom = 59.0
-custom_fonts/font = SubResource( 2 )
-
-[node name="Spacer2" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
-margin_right = 458.0
-margin_bottom = 59.0
-custom_fonts/font = SubResource( 2 )
-
-[node name="MasterLabel" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
-margin_right = 458.0
-margin_bottom = 59.0
-custom_fonts/font = SubResource( 2 )
-text = "SOUND_MASTER"
-
-[node name="MasterSlider" type="HSlider" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
-unique_name_in_owner = true
-margin_left = 835.0
-margin_right = 1135.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 300, 50 )
-size_flags_horizontal = 10
-min_value = 0.1
-max_value = 99.9
-step = 0.1
-value = 50.0
-
-[node name="MusicLabel" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
 margin_top = 63.0
 margin_right = 458.0
 margin_bottom = 122.0
 custom_fonts/font = SubResource( 2 )
-text = "SOUND_MUSIC"
 
-[node name="MusicSlider" type="HSlider" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
-unique_name_in_owner = true
-margin_left = 835.0
+[node name="Spacer2" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
+margin_left = 462.0
 margin_top = 63.0
 margin_right = 1135.0
-margin_bottom = 113.0
-rect_min_size = Vector2( 300, 50 )
-size_flags_horizontal = 10
-min_value = 0.1
-max_value = 99.9
-step = 0.1
-value = 50.0
+margin_bottom = 122.0
+custom_fonts/font = SubResource( 2 )
 
-[node name="SfxLabel" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
+[node name="MasterLabel" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
 margin_top = 126.0
 margin_right = 458.0
 margin_bottom = 185.0
 custom_fonts/font = SubResource( 2 )
-text = "SOUND_SFX"
+text = "SOUND_MASTER"
 
-[node name="SfxSlider" type="HSlider" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
+[node name="MasterSlider" type="HSlider" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
 unique_name_in_owner = true
 margin_left = 835.0
 margin_top = 126.0
@@ -226,29 +196,72 @@ max_value = 99.9
 step = 0.1
 value = 50.0
 
-[node name="Spacer3" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
-margin_right = 458.0
-margin_bottom = 59.0
-custom_fonts/font = SubResource( 2 )
-
-[node name="Spacer4" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
-margin_right = 458.0
-margin_bottom = 59.0
-custom_fonts/font = SubResource( 2 )
-
-[node name="FullscreenLabel" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
+[node name="MusicLabel" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
 margin_top = 189.0
 margin_right = 458.0
 margin_bottom = 248.0
+custom_fonts/font = SubResource( 2 )
+text = "SOUND_MUSIC"
+
+[node name="MusicSlider" type="HSlider" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
+unique_name_in_owner = true
+margin_left = 835.0
+margin_top = 189.0
+margin_right = 1135.0
+margin_bottom = 239.0
+rect_min_size = Vector2( 300, 50 )
+size_flags_horizontal = 10
+min_value = 0.1
+max_value = 99.9
+step = 0.1
+value = 50.0
+
+[node name="SfxLabel" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
+margin_top = 252.0
+margin_right = 458.0
+margin_bottom = 311.0
+custom_fonts/font = SubResource( 2 )
+text = "SOUND_SFX"
+
+[node name="SfxSlider" type="HSlider" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
+unique_name_in_owner = true
+margin_left = 835.0
+margin_top = 252.0
+margin_right = 1135.0
+margin_bottom = 302.0
+rect_min_size = Vector2( 300, 50 )
+size_flags_horizontal = 10
+min_value = 0.1
+max_value = 99.9
+step = 0.1
+value = 50.0
+
+[node name="Spacer3" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
+margin_top = 315.0
+margin_right = 458.0
+margin_bottom = 374.0
+custom_fonts/font = SubResource( 2 )
+
+[node name="Spacer4" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
+margin_left = 462.0
+margin_top = 315.0
+margin_right = 1135.0
+margin_bottom = 374.0
+custom_fonts/font = SubResource( 2 )
+
+[node name="FullscreenLabel" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
+margin_top = 378.0
+margin_right = 458.0
+margin_bottom = 437.0
 custom_fonts/font = SubResource( 2 )
 text = "TOGGLE_FULLSCREEN"
 
 [node name="FullscreenBtn" type="CheckButton" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
 unique_name_in_owner = true
 margin_left = 1081.0
-margin_top = 189.0
+margin_top = 378.0
 margin_right = 1135.0
-margin_bottom = 248.0
+margin_bottom = 437.0
 size_flags_horizontal = 10
 
 [node name="ResolutionLabel" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
@@ -277,19 +290,41 @@ items = [ "640x360", null, false, 0, null, "1280x720", null, false, 1, null, "19
 selected = 0
 
 [node name="VsyncLabel" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
-margin_top = 252.0
+margin_top = 441.0
 margin_right = 458.0
-margin_bottom = 311.0
+margin_bottom = 500.0
 custom_fonts/font = SubResource( 2 )
 text = "TOGGLE_VSYNC"
 
 [node name="VsyncBtn" type="CheckButton" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
 unique_name_in_owner = true
 margin_left = 1081.0
-margin_top = 252.0
+margin_top = 441.0
 margin_right = 1135.0
-margin_bottom = 311.0
+margin_bottom = 500.0
 size_flags_horizontal = 10
+
+[node name="Spacer7" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
+margin_top = 504.0
+margin_right = 458.0
+margin_bottom = 563.0
+custom_fonts/font = SubResource( 2 )
+
+[node name="Spacer6" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
+margin_left = 462.0
+margin_top = 504.0
+margin_right = 1135.0
+margin_bottom = 563.0
+custom_fonts/font = SubResource( 2 )
+
+[node name="ResetSettingsBtn2" type="Button" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
+margin_left = 123.0
+margin_top = 567.0
+margin_right = 335.0
+margin_bottom = 604.0
+size_flags_horizontal = 4
+custom_fonts/font = SubResource( 8 )
+text = "RESET_SETTINGS"
 
 [node name="ABOUT" type="Tabs" parent="Panel/TabContainer"]
 visible = false
@@ -320,3 +355,4 @@ bbcode_text_translate = "ABOUT_TEXT"
 [connection signal="toggled" from="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer/FullscreenBtn" to="." method="_on_FullscreenBtn_toggled"]
 [connection signal="item_selected" from="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer/ResolutionBtn" to="." method="_on_ResolutionBtn_item_selected"]
 [connection signal="toggled" from="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer/VsyncBtn" to="." method="_on_VsyncBtn_toggled"]
+[connection signal="pressed" from="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer/ResetSettingsBtn2" to="." method="_on_ResetSettingsBtn2_pressed"]

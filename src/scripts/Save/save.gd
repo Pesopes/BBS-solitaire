@@ -36,7 +36,11 @@ func load_data():
 	file.open(SAVEFILE, File.READ)
 	game_data = file.get_var()
 	file.close()
-	
+
+func delete_data():
+	var dir = Directory.new()
+	dir.remove(SAVEFILE)
+
 func save_data():
 	var file = File.new()
 	file.open(SAVEFILE, File.WRITE)
