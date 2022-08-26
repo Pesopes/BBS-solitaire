@@ -339,8 +339,8 @@ func animate_card_use(card:Area2D,target_pos:Vector2,defualt_scale:Vector2):
 	var mid_point := card.position.linear_interpolate(target_pos,0.5)
 	var max_scale = Vector2(3.6,3.6)
 	# First part
-	var anim_time = 0.18
-	var pos_tween := create_tween().set_trans(Tween.TRANS_QUART).set_ease(Tween.EASE_OUT)
+	var anim_time = 0.3584
+	var pos_tween := create_tween().set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
 #	pos_tween.tween_property(card,"position",mid_point,first_part_anim_time)
 #	pos_tween.parallel().tween_property(card,"global_scale",max_scale,first_part_anim_time)
 	# Second part
