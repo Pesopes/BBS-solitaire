@@ -1,5 +1,7 @@
 # Import cache
 .import/
+*.translation
+export_presets.cfg
 
 # Binaries
 bin/
