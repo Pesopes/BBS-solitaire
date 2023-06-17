@@ -433,11 +433,15 @@ func highlight_empty_space(on:bool):
 			bottom_space.get_node("Icon").visible = on
 
 func unlock_next_space():
+	# gdscript is lazy, so if we don't make a new array, any changes we make
+	# will change the history
+	unlocked_slots = unlocked_slots.duplicate()
+	
 	for n in len(unlocked_slots):
 		if not unlocked_slots[n]:
 			unlocked_slots[n] = true
-			return
-	
+			break
+
 func close_stack(stack:Area2D,is_loading=false):
 	print_debug("CLOSING")
 	if not is_loading and not stack.is_in_group("only_one"):
