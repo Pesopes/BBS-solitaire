@@ -3,6 +3,9 @@
 *.translation
 export_presets.cfg
 
+#godot
+.godot/
+
 # Binaries
 bin/
 build/
