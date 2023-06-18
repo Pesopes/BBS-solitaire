@@ -1,29 +1,30 @@
-key,en,cs
-TEST,This is a simple test to test stuff!,Toto je jednoduchý test na vyzkoušení věcí!
-LANGUAGE,Language,Jazyk
-RESET,Reset,Reset
-BACK,Back,Zpátky
-SETTINGS,Settings,Nastavení
-MENU,Menu,Menu
-ABOUT,About,O hře
-GAME,Game,Hra
-GRAPHICS,Graphics,Grafika
-SOUND,Sound,Zvuk
-GENERAL,General,Obecný
-RESET_SETTINGS,Reset settings,Resetovat nastavení
-CHOOSE_MODE,Choose difficulty,Vybrat obtížnost
-CHOOSE_LANGUAGE,Choose language,Vybrat jazyk
-TOGGLE_FULLSCREEN,Toggle fullscreen,Celá obrazovka
-TOGGLE_VSYNC,Enable VSync,Zapnout VSync
-RESOLUTION,Change resolution,Změnit rozlišení
-SOUND_MASTER,Master volume,Hlavní hlasitost
-SOUND_MUSIC,Music,Hudba
-SOUND_SFX,Sound effects,Zvukové efekty
-MODE,Difficulty,Obtížnost
-STATS_TIME,Time to complete:,Čas hry:
-STATS_CLICKED,Clicks:,Počet kliků:
-STATS_MODE,Difficulty:,Obtížnost:
-CONGRATULATIONS,Congratulations!,Blahopřeji!
-RULES,Rules,Pravidla
-RULES_EXPLANATION,"The goal of the game is to match 4 cards of the same suit and place them on an empty space to form a set. You can only place one card on the [b]top row[/b] at a time or you can place a complete set there. With increasing difficulty some of the top space become locked, if you form a set on the [b]bottom row[/b] you will unlock one of the locked top spaces. When all the sets are formed you win!","Cílem hry je spojit 4 karty stejné barvy a umístit je na prázdné místo, aby vytvořily sadu. Do [b]horní řady[/b] můžete umístit pouze jednu kartu najednou nebo tam můžete umístit celou sadu. Se zvyšující se obtížností se některé horní pole uzamknou, pokud vytvoříte sadu na [b]spodní řadě[/b], odemknete jedno ze zamčených horních polí. Když jsou všechny sady hotové, vyhráváte!"
-ABOUT_TEXT,This is a solitaire game from the game Last call BBS by Zachtronics. In the original it’s played with the Japanese kabufuda cards. I tried using these cards in the game but it didn’t fit in so I just chose some classic French cards.\n\nAttributions:\n[b]Pixelated cards[/b] by [url=https://drawsgood.itch.io/8bit-deck-card-assets]drawsgood[/url]\n[b]Unused kabufuda cards[/b] from [url=https://steve-p.org/cards/Kabu.html]Steve’s web pages[/url]\n[b]Sound effects[/b] from [url=https://freesound.org/]freesound.org[/url]\n[b]Music[/b]: Flying unicorn by [url=https://modarchive.org/index.php?request=view_profile&query=68760]Ghidorah[/url]\n[b]Flags[/b] by [url=https://lukasfdahl.itch.io/europe-flags]lukasfdahl[/url],"Jedná se o typ hry solitare ze hry Last call BBS od Zachtronics. V originále se hraje s japonskými kartami kabufuda. Zkoušel jsem použít tyto karty ve hře, ale nezapadaly do ní, takže jsem vybral klasické francouzské karty.\n\nAtribuce:\n[b]Pixelované karty[/b] od [url=https://drawsgood. itch.io/8bit-deck-card-assets]drawsgood[/url]\n[b]Nepoužité karty kabufuda[/b] z [url=https://steve-p.org/cards/Kabu.html]Steve's web pages[/url]\n[b]Zvukové efekty[/b] z [url=https://freesound.org/]freesound.org[/url]\n[b]Hudba[/b]: Flying unicorn od [url=https://modarchive.org/index.php?request=view_profile&query=68760]Ghidorah[/url]\n[b]Flags[/b] by [url=https://lukasfdahl.itch.io/europe-flags]lukasfdahl[/url]Vlajod"
+key,en,cs,es
+TEST,This is a simple test to test stuff!,Toto je jednoduchý test na vyzkoušení věcí!,¡Este es un simple test para probar cosas!
+LANGUAGE,Language,Jazyk,Idioma
+LANGUAGE_NAME,English,Česky,Español
+RESET,Reset,Reset,Reset
+BACK,Back,Zpátky,Atrás
+SETTINGS,Settings,Nastavení,Configuración
+MENU,Menu,Menu,Menú
+ABOUT,About,O hře,Acerca del juego
+GAME,Game,Hra,Juego
+GRAPHICS,Graphics,Grafika,Gráfico
+SOUND,Sound,Zvuk,Sonido
+GENERAL,General,Obecný,General
+RESET_SETTINGS,Reset settings,Resetovat nastavení,Restablecer configuración
+CHOOSE_MODE,Choose difficulty,Vybrat obtížnost,Seleccionar dificultad
+CHOOSE_LANGUAGE,Choose language,Vybrat jazyk,Seleccionar idioma
+TOGGLE_FULLSCREEN,Toggle fullscreen,Celá obrazovka,Pantalla completa
+TOGGLE_VSYNC,Enable VSync,Zapnout VSync,Activar VSync
+RESOLUTION,Change resolution,Změnit rozlišení,Cambiar la resolución
+SOUND_MASTER,Master volume,Hlavní hlasitost,Volumen maestro
+SOUND_MUSIC,Music,Hudba,Música
+SOUND_SFX,Sound effects,Zvukové efekty,Efectos sonoros
+MODE,Difficulty,Obtížnost,Dificultad
+STATS_TIME,Your time:,Tvůj čas:,Tu tiempo:
+STATS_CLICKED,Clicks:,Počet kliků:,Clics
+STATS_MODE,Difficulty:,Obtížnost:,Dificultad:
+CONGRATULATIONS,Congratulations!,Blahopřeji!,¡Felicidades!
+RULES,Rules,Pravidla,Reglas
+RULES_EXPLANATION,"The goal of the game is to match 4 cards of the same suit and place them on an empty space to form a set. You can only place one card on the [b]top row[/b] at a time or you can place a complete set there. With increasing difficulty some of the top space become locked, if you form a set on the [b]bottom row[/b] you will unlock one of the locked top spaces. When all the sets are formed you win!","Cílem hry je spojit 4 karty stejné barvy a umístit je na prázdné místo, aby vytvořily sadu. Do [b]horní řady[/b] můžete umístit pouze jednu kartu najednou nebo tam můžete umístit celou sadu. Se zvyšující se obtížností se některé horní pole uzamknou, pokud vytvoříte sadu na [b]spodní řadě[/b], odemknete jedno ze zamčených horních polí. Když jsou všechny sady hotové, vyhráváte!","El objetivo del juego es emparejar 4 cartas del mismo palo y colocarlas en un espacio vacío para formar un conjunto. Sólo puedes colocar una carta en la [b]fila superior[/b] a la vez o puedes colocar un juego completo allí. A medida que aumenta la dificultad, algunos de los espacios superiores se bloquean. Si formas un juego en la [b]fila inferior[/b], desbloquearás uno de los espacios superiores bloqueados. Cuando hayas formado todos los conjuntos, habrás ganado."
+ABOUT_TEXT,This is a solitaire game from the game Last call BBS by Zachtronics. In the original it’s played with the Japanese kabufuda cards. I tried using these cards in the game but it didn’t fit in so I just chose some classic French cards.\n\nAttributions:\n[b]Pixelated cards[/b] by [url=https://drawsgood.itch.io/8bit-deck-card-assets]drawsgood[/url]\n[b]Unused kabufuda cards[/b] from [url=https://steve-p.org/cards/Kabu.html]Steve’s web pages[/url]\n[b]Sound effects[/b] from [url=https://freesound.org/]freesound.org[/url]\n[b]Music[/b]: Flying unicorn by [url=https://modarchive.org/index.php?request=view_profile&query=68760]Ghidorah[/url]\n[b]Flags[/b] by [url=https://lukasfdahl.itch.io/europe-flags]lukasfdahl[/url],"Jedná se o typ hry solitare ze hry Last call BBS od Zachtronics. V originále se hraje s japonskými kartami kabufuda. Zkoušel jsem použít tyto karty ve hře, ale nezapadaly do ní, takže jsem vybral klasické francouzské karty.\n\nAtribuce:\n[b]Pixelované karty[/b] od [url=https://drawsgood. itch.io/8bit-deck-card-assets]drawsgood[/url]\n[b]Nepoužité karty kabufuda[/b] z [url=https://steve-p.org/cards/Kabu.html]Steve's web pages[/url]\n[b]Zvukové efekty[/b] z [url=https://freesound.org/]freesound.org[/url]\n[b]Hudba[/b]: Flying unicorn od [url=https://modarchive.org/index.php?request=view_profile&query=68760]Ghidorah[/url]\n[b]Flags[/b] by [url=https://lukasfdahl.itch.io/europe-flags]lukasfdahl[/url]Vlajod",Este es un juego de solitario del juego Last call BBS de Zachtronics. En el original se juega con las cartas japonesas que se llaman kabufuda. Intenté usar estas cartas en el juego pero no encajaba así que elegí unas cartas francesas clásicas.\n\nAtribución:\n[b]Cartas pixeladas[/b] de [url=https://drawsgood.itch.io/8bit-deck-card-assets]drawsgood[/url]\n[b]Cartas de kabufuda no utilizadas[/b] de [url=https://steve-p.org/cards/Kabu.html]Steve’s web pages[/url]\n[b]Efectos sonoros[/b] de[url=https://freesound.org/]freesound.org[/url]\n[b]Music[/b]: Flying unicorn de [url=https://modarchive.org/index.php?request=view_profile&query=68760]Ghidorah[/url]\n[b]Banderas[/b] de [url=https://lukasfdahl.itch.io/europe-flags]lukasfdahl[/url]
