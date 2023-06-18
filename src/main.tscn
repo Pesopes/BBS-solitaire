@@ -28,11 +28,9 @@ card_offset = Vector2( -4, 18 )
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="SettingsButton" type="Button" parent="UI"]
-anchor_left = 1.0
-anchor_right = 1.0
-margin_left = -451.0
+margin_left = 1889.0
 margin_top = 101.0
-margin_right = -154.0
+margin_right = 2186.0
 margin_bottom = 202.0
 custom_fonts/font = SubResource( 1 )
 text = "MENU"
@@ -56,7 +54,6 @@ shortcut = SubResource( 3 )
 text = "BACK"
 
 [node name="Settings" parent="UI" instance=ExtResource( 5 )]
-visible = false
 
 [node name="WinDialog" parent="UI" instance=ExtResource( 9 )]
 unique_name_in_owner = true
