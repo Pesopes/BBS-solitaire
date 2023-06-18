@@ -151,17 +151,15 @@ margin_bottom = 59.0
 custom_fonts/font = SubResource( 2 )
 text = "CHOOSE_LANGUAGE"
 
-[node name="LangBtn" type="OptionButton" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
+[node name="LangBtn" type="Button" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
 unique_name_in_owner = true
-margin_left = 961.0
+margin_left = 817.0
 margin_right = 1135.0
 margin_bottom = 59.0
 size_flags_horizontal = 10
 theme = SubResource( 5 )
 custom_fonts/font = SubResource( 3 )
-text = "English"
-items = [ "English", null, false, 0, null, "Česky", null, false, 1, null ]
-selected = 0
+text = "LANGUAGE_NAME"
 
 [node name="Spacer" type="Label" parent="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer"]
 margin_top = 63.0
@@ -348,7 +346,7 @@ script = ExtResource( 4 )
 bbcode_text_translate = "ABOUT_TEXT"
 
 [connection signal="item_selected" from="Panel/TabContainer/GAME/MarginContainer/GridContainer/ModeBtn" to="." method="_on_ModeBtn_item_selected"]
-[connection signal="item_selected" from="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer/LangBtn" to="." method="_on_LangBtn_item_selected"]
+[connection signal="pressed" from="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer/LangBtn" to="." method="_on_LangBtn_pressed"]
 [connection signal="value_changed" from="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer/MasterSlider" to="." method="_on_MasterSlider_value_changed"]
 [connection signal="value_changed" from="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer/MusicSlider" to="." method="_on_MusicSlider_value_changed"]
 [connection signal="value_changed" from="Panel/TabContainer/SETTINGS/MarginContainer/GridContainer/SfxSlider" to="." method="_on_SfxSlider_value_changed"]

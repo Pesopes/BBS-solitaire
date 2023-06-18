@@ -15,3 +15,7 @@ func _on_UK_pressed():
 
 func _on_CS_pressed():
 	set_language_and_start("cs")
+
+
+func _on_ES_pressed():
+	set_language_and_start("es")

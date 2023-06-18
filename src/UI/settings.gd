@@ -19,12 +19,6 @@ func _ready():
 	print_debug(Save.game_data)
 	mode_btn.selected = Save.game_data.mode
 
-	#bad but I want to finish this
-	match Save.game_data.language:
-		"en":
-			lang_btn.selected = 0 
-		"cs":
-			lang_btn.selected = 1
 	GlobalSettings.set_language(Save.game_data.language)
 
 	fullscreen_btn.pressed = Save.game_data.fullscreen_on
@@ -106,3 +100,7 @@ func _on_LangBtn_item_selected(index):
 
 func _on_ResetSettingsBtn2_pressed():
 	Save.delete_data()
+
+
+func _on_LangBtn_pressed():
+	get_tree().change_scene("res://src/first screen/First_screen.tscn")

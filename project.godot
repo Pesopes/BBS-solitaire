@@ -76,7 +76,8 @@ reset_board={
 
 [locale]
 
-translations=PoolStringArray( "res://lang/lang.cs.translation", "res://lang/lang.en.translation" )
+translations=PoolStringArray( "res://lang/lang.cs.translation", "res://lang/lang.en.translation", "res://lang/lang.es.translation" )
+locale_filter=[ 0, [  ] ]
 
 [physics]
 

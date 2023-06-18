@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/EuropeFlags v2.png" type="Texture" id=1]
 [ext_resource path="res://src/first screen/First_screen.gd" type="Script" id=2]
@@ -9,6 +9,10 @@ bg_color = Color( 0.65098, 0.54902, 0.415686, 1 )
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
 region = Rect2( 16, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 160, 16, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 1 )
@@ -37,20 +41,29 @@ size_flags_vertical = 3
 alignment = 1
 
 [node name="UK" type="TextureButton" parent="HBoxContainer"]
-margin_left = 912.0
-margin_right = 1168.0
+margin_left = 782.0
+margin_right = 1038.0
 margin_bottom = 256.0
 rect_min_size = Vector2( 256, 256 )
 texture_normal = SubResource( 1 )
 expand = true
 
+[node name="ES" type="TextureButton" parent="HBoxContainer"]
+margin_left = 1042.0
+margin_right = 1298.0
+margin_bottom = 256.0
+rect_min_size = Vector2( 256, 256 )
+texture_normal = SubResource( 4 )
+expand = true
+
 [node name="CS" type="TextureButton" parent="HBoxContainer"]
-margin_left = 1172.0
-margin_right = 1428.0
+margin_left = 1302.0
+margin_right = 1558.0
 margin_bottom = 256.0
 rect_min_size = Vector2( 256, 256 )
 texture_normal = SubResource( 3 )
 expand = true
 
 [connection signal="pressed" from="HBoxContainer/UK" to="." method="_on_UK_pressed"]
+[connection signal="pressed" from="HBoxContainer/ES" to="." method="_on_ES_pressed"]
 [connection signal="pressed" from="HBoxContainer/CS" to="." method="_on_CS_pressed"]
