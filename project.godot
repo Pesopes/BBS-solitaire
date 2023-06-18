@@ -26,6 +26,7 @@ boot_splash/show_image=false
 boot_splash/image="res://icon.png"
 boot_splash/bg_color=Color( 0.866667, 0.682353, 0.337255, 1 )
 config/icon="res://icon.png"
+config/quit_on_go_back=false
 
 [autoload]
 
@@ -55,6 +56,7 @@ singletons=[  ]
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+theme/custom="res://addons/DarkPlane.tres"
 
 [input]
 

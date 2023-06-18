@@ -34,7 +34,7 @@ func _ready():
 	GlobalSettings.update_sfx_volume(Save.game_data.sfx_vol)	
 
 func enable_popup(duration:float=1.0):
-	popup()
+	popup_centered()
 	#in animation
 	var defualt_margin_top = margin_top
 	margin_top = -1000
