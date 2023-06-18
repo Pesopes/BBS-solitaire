@@ -24,7 +24,7 @@ config/name="BBS solitaire"
 run/main_scene="res://src/main.tscn"
 boot_splash/show_image=false
 boot_splash/image="res://icon.png"
-boot_splash/bg_color=Color( 0.745098, 0.54902, 0.388235, 1 )
+boot_splash/bg_color=Color( 0.866667, 0.682353, 0.337255, 1 )
 config/icon="res://icon.png"
 
 [autoload]
@@ -85,5 +85,5 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-environment/default_clear_color=Color( 0.854902, 0.721569, 0.545098, 1 )
+environment/default_clear_color=Color( 0.952941, 0.74902, 0.368627, 1 )
 environment/default_environment="res://default_env.tres"
