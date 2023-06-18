@@ -24,11 +24,14 @@ anchor_bottom = 1.0
 script = ExtResource( 2 )
 
 [node name="Panel" type="Panel" parent="."]
-margin_left = -50.0
-margin_top = -40.0
-margin_right = 2495.0
-margin_bottom = 1140.0
+margin_left = -75282.0
+margin_top = -34808.0
+margin_right = 78023.0
+margin_bottom = 36271.0
 custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 anchor_top = 0.5
