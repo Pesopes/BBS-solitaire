@@ -1,5 +1,6 @@
 # Kabufuda solitaire
+This is a solitaire game from the game Last call BBS by Zachtronics.
 
-[itch.io page](https://pesopes.itch.io/kabufuda)
+More information (and downloads) on [itch.io](https://pesopes.itch.io/kabufuda)
 
 Made in Godot 3
